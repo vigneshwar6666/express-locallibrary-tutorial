@@ -8,9 +8,9 @@ MVC is an application design model comprised of three interconnected parts. ... 
 ## What is Model View Controller?
 In a typical application you will find these three fundamental parts:
 
--Data (Model) 
--An interface to view and modify the data (View) 
--Operations that can be performed on the data (Controller)
+- Data (Model) 
+- An interface to view and modify the data (View) 
+- Operations that can be performed on the data (Controller)
 
 ## MVC Application Execution Process
 1. Request
