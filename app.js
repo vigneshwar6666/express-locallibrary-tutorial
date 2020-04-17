@@ -16,7 +16,7 @@ dev_db_url = process.env.ATLAS_URI
 const mongoose = require('mongoose');
 const dev_db_url = 'mongodb+srv://Vigneshwar:Vignesh4321@cluster0-b1p7s.mongodb.net/local_library?retryWrites=true&w=majority'
 const mongoDB = process.env.MONGODB_URI || dev_db_url;
-mongoose.connect(mongoDB, { useNewUrlParser: true });
+mongoose.connect(mongoDB, { useNewUrlParser: true , useUnifiedTopology: true});
 mongoose.Promise = global.Promise;
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
