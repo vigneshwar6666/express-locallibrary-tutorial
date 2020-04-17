@@ -3,12 +3,15 @@ const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
+const dotenv = require('dotenv');
 
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
 const catalogRouter = require('./routes/catalog');
 
 const app = express();
+dotenv.config({ path: '.env' })
+dev_db_url = process.env.ATLAS_URI
 //Set up mongoose connection
 const mongoose = require('mongoose');
 const dev_db_url = 'mongodb+srv://Vigneshwar:Vignesh4321@cluster0-b1p7s.mongodb.net/local_library?retryWrites=true&w=majority'
