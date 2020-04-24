@@ -1,8 +1,8 @@
-const mongoose = require('mongoose');
+let mongoose = require('mongoose');
 
 const Schema = mongoose.Schema;
 
-const GenreSchema = new Schema({
+let GenreSchema = new Schema({
     name: {type: String, required: true, min: 3, max: 100}
 });
 
@@ -15,4 +15,3 @@ GenreSchema
 
 // Export model.
 module.exports = mongoose.model('Genre', GenreSchema);
-© 2020 GitHub, Inc.
