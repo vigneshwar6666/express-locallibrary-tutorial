@@ -1,20 +1,7 @@
-# Express-locallibrary-tutorial
 
+Express loclalibrary tutorial-controllers
 
-## MVC
+"Routes" to forward the supported requests (and any information encoded in request URLs) to the appropriate controller functions.
+Controller functions to get the requested data from the models, create an HTML page displaying the data, and return it to the user to view in the browser.
+Views (templates) used by the controllers to render the data.
 
-MVC is an application design model comprised of three interconnected parts. ... The MVC model or "pattern" is commonly used for developing modern user interfaces. It is provides the fundamental pieces for designing a programs for desktop or mobile, as well as web applications.
-
-## What is Model View Controller?
-In a typical application you will find these three fundamental parts:
-
-- Data (Model) 
-- An interface to view and modify the data (View) 
-- Operations that can be performed on the data (Controller)
-
-## MVC Application Execution Process
-1. Request
-1. The Route
-1. The MvcHandler Executes
-1. The controller Executes
-1. Action Invoked
