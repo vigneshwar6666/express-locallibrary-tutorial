@@ -17,7 +17,7 @@ const app = express();
 dotenv.config({ path: '.env' })
 const mongoose = require('mongoose');
 
-var dev_db_url = 'mongodb+srv://cooluser:coolpassword@cluster0-mbdj7.mongodb.net/local_library?retryWrites=true'
+var dev_db_url = 'mongodb+srv://Vigneshwar:Vignesh4321@cluster0-mbdj7.mongodb.net/local_library?retryWrites=true'
 
 var mongoDB = process.env.MONGODB_URI || dev_db_url;
 mongoose.connect(mongoDB, { useNewUrlParser: true });
